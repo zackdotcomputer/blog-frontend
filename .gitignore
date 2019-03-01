@@ -1,5 +1,8 @@
 # Node template
 
+# ignore the ghost config file - use ENV vars in production
+.ghost.json
+
 # Logs
 logs
 *.log
