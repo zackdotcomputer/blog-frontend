@@ -1,5 +1,7 @@
-# Netlify redirects file, edit with your domain
-# https://www.netlify.com/docs/redirects/
+# These rules will change if you change your site’s custom domains or HTTPS settings
 
-https://gatsby-starter-ghost.netlify.com/*      https://gatsby.ghost.org/:splat    301!
-http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat    301!
+# Redirect default Netlify subdomain to primary domain
+https://jolly-borg-02ab30.netlify.com/* https://blog.zacksheppard.com/:splat 301!
+
+# These extra rules are required because HTTPS is not forced
+http://jolly-borg-02ab30.netlify.com/* https://blog.zacksheppard.com/:splat 301!
