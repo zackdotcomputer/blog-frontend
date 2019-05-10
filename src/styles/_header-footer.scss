@@ -1,0 +1,211 @@
+// From the Ghost Gatsby Starter
+
+/* Header */
+/* ---------------------------------------------------------- */
+
+.site-head {
+  background: $color-bg;
+
+  &.sticky {
+    position: fixed;
+    width: 100%;
+  }
+
+  .site-mast {
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    background: url("/images/header-image.jpg") center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    .mast-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .site-nav-item:last-child {
+          padding-right: 0;
+        }
+      }
+
+      .site-nav-icon {
+        height: 25px;
+        padding: 5px;
+        background: rgba($color: #fff, $alpha: 0.75);
+      }
+    }
+
+    .site-banner {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 10vw;
+      text-align: center;
+      background: rgba($color: $color-bg, $alpha: 0.9);
+
+      .site-banner-title {
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+        line-height: 1.3em;
+        font-family: "Playfair Display", $font-serif;
+
+        .sans-serif {
+          font-family: $font-sans-serif;
+        }
+
+        .large {
+          display: block;
+          font-size: 7rem;
+          padding: 0.5rem;
+        }
+      }
+
+      .site-banner-desc {
+        margin: 1rem 0 0 0;
+        padding: 0;
+        font-size: 2rem;
+        line-height: 1.3em;
+        opacity: 0.7;
+      }
+    }
+
+    .site-nav-item {
+      color: #fff;
+    }
+  }
+
+  // Shared nav item styles
+  .site-nav-item {
+    display: inline-block;
+    padding: 5px 10px;
+    opacity: 0.7;
+    color: $color-base;
+
+    font-family: $font-serif;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+
+  .site-nav-icon {
+    height: 15px;
+    margin: -5px 0 0;
+  }
+
+  .site-logo {
+    height: 25px;
+  }
+
+  .brand-logo {
+    height: 25px;
+    margin-top: -15px;
+  }
+
+  // The below-masthead (and post) navbar
+
+  .nav-wrapper {
+    border-bottom: 1px solid $color-border;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .site-nav,
+    .site-nav-left,
+    .site-nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-nav-left {
+      margin: 0 20px 0 -10px;
+    }
+
+    .site-nav-right {
+      margin: 0 -10px 0 20px;
+    }
+
+    &.centered .site-nav {
+      justify-content: center;
+    }
+  }
+}
+
+/* Pagination */
+/* ---------------------------------------------------------- */
+
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vw 0 0;
+
+  a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: $color-border 1px solid;
+    color: $color-secondary;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1em;
+    border-radius: $radius;
+  }
+}
+
+.pagination-location {
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  text-align: center;
+  color: $color-secondary;
+  font-size: 1.3rem;
+}
+
+/* Footer */
+/* ---------------------------------------------------------- */
+
+.site-foot {
+  padding: 20px 0 40px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  background: $color-base;
+}
+
+.site-foot-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    @extend %a-fade-styling;
+    color: rgba(255, 255, 255, 0.7);
+
+    &:hover {
+      text-decoration: underline;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.site-foot-nav-right a {
+  display: inline-block;
+  padding: 2px 5px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
