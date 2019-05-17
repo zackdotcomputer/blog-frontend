@@ -20,7 +20,7 @@ const Footer = ({ site }) => {
           See the code that powers this frontend
           <a
             className="site-foot-nav-item"
-            href="https://github.com/zackzachariah/blog-frontend"
+            href="https://github.com/genuinezack/blog-frontend"
             target="_blank"
           >
             here on my Github
