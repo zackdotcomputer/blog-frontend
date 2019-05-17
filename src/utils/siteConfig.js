@@ -8,9 +8,9 @@ module.exports = {
 
   shareImage: `/images/default-share.jpg`, // fallback image for meta data. Will be used, when no post/tag/author image specified. 1200x1200 is recommended
   shareImageWidth: 1200, // Change to the width of your default share image
-  shareImageHeight: 873, // Change to the height of your default share image
+  shareImageHeight: 1200, // Change to the height of your default share image
 
-  shortTitle: `Code & Cocktails`, // Used for App manifest e.g. Mobile Home Screen
+  shortTitle: `Code and Cocktails`, // Used for App manifest e.g. Mobile Home Screen
   siteIcon: `favicon.png`, // Logo in /static dir used for SEO, RSS, and App manifest
   backgroundColor: `#021114`, // Used for Offline Manifest
   themeColor: `#FEFEFE` // Used for Offline Manifest
