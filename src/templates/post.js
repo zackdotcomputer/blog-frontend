@@ -16,7 +16,7 @@ import { Tags } from "@tryghost/helpers-gatsby";
 const Post = ({ data, location }) => {
     const post = data.ghostPost;
     const created_at = new Date(post.created_at);
-    console.log("Created at: " + created_at);
+
     const dateString = created_at
         ? created_at.toLocaleDateString(undefined, {
               year: "numeric",
