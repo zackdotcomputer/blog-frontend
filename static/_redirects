@@ -1,7 +1,7 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect default Netlify subdomain to primary domain
-https://jolly-borg-02ab30.netlify.com/* https://blog.zacksheppard.com/:splat 301!
+https://jolly-borg-02ab30.netlify.com/* https://blog.zack.computer/:splat 301!
 
 # These extra rules are required because HTTPS is not forced
-http://jolly-borg-02ab30.netlify.com/* https://blog.zacksheppard.com/:splat 301!
+http://jolly-borg-02ab30.netlify.com/* https://blog.zack.computer/:splat 301!
